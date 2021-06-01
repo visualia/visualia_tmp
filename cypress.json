@@ -1,0 +1,8 @@
+{
+  "component": {
+    "componentFolder": "src",
+    "testFiles": "**/*.spec.{js,jsx,ts,tsx}",
+    "screenshotsFolder": "./cypress/snapshots/actual",
+    "trashAssetsBeforeRuns": true
+  }
+}
