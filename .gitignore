@@ -3,6 +3,5 @@ node_modules
 dist
 dist-ssr
 *.local
-cypress/snapshots/actual
-cypress/snapshots/diff
 cypress/videos
+*.diff.png

@@ -1,5 +1,7 @@
 const { startDevServer } = require("@cypress/vite-dev-server");
-const getCompareSnapshotsPlugin = require("cypress-visual-regression/dist/plugin");
+const {
+  addMatchImageSnapshotPlugin,
+} = require("cypress-image-snapshot/plugin");
 const vue = require("@vitejs/plugin-vue");
 
 module.exports = (on, config) => {
@@ -7,13 +9,10 @@ module.exports = (on, config) => {
     startDevServer({
       options,
       viteConfig: {
-        alias: {
-          vue: "vue/dist/vue.esm-bundler.js",
-        },
         plugins: [vue()],
       },
     })
   );
-  getCompareSnapshotsPlugin(on, config);
+  addMatchImageSnapshotPlugin(on, config);
   return config;
 };

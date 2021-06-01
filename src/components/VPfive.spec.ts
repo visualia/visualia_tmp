@@ -9,5 +9,6 @@ it("VPfive", () => {
     <v-pfive data-test="canvas" />
     `
   );
-  cy.get('[data-test="canvas"]');
+  //@ts-ignore
+  cy.get('[data-test="canvas"]').matchImageSnapshot();
 });

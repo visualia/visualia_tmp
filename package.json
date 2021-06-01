@@ -5,9 +5,9 @@
     "build": "vitepress build",
     "build:lib": "vite build -c vite.lib.config.js && tsc src/index.ts --declaration --emitDeclarationOnly --esModuleInterop --outDir dist --target esnext --module esnext --moduleResolution node",
     "serve": "vitepress serve",
-    "test": "cypress open-ct --env type=actual",
-    "test:ci": "cypress run-ct --env type=actual",
-    "test:snapshots": "cypress run-ct --env type=base --config screenshotsFolder=cypress/snapshots/base"
+    "test": "cypress open-ct",
+    "test:ci": "cypress run-ct",
+    "test:snapshots": "cypress run-ct --env updateSnapshots=true"
   },
   "dependencies": {
     "@cypress/vite-dev-server": "^2.0.0",
@@ -16,6 +16,7 @@
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
     "@vueuse/core": "^4.11.2",
+    "cypress-image-snapshot": "^4.0.1",
     "katex": "^0.13.11",
     "p5i": "^0.4.2",
     "typescript": "^4.3.2",
