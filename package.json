@@ -1,10 +1,15 @@
 {
+  "name": "visualia2",
   "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build",
-    "build:lib": "vite build -c vite.lib.config.js && tsc src/index.ts --declaration --emitDeclarationOnly --esModuleInterop --outDir dist --target esnext --module esnext --moduleResolution node",
-    "serve": "vitepress serve",
+    "build:docs": "vitepress build",
+    "build": "vite build -c vite.lib.config.js && tsc src/index.ts --declaration --emitDeclarationOnly --esModuleInterop --outDir dist --target esnext --module esnext --moduleResolution node",
+    "serve:docs": "vitepress serve",
     "test": "cypress run-ct",
     "test:dev": "cypress open-ct",
     "test:snapshots": "cypress run-ct --env updateSnapshots=true"
