@@ -10,4 +10,4 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           install: false
-          command: npm run test
+          command: yarn cypress run-ct
