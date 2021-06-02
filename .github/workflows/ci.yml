@@ -15,6 +15,7 @@ jobs:
           command: yarn cypress run-ct
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
+        if: always()
         with:
           name: cypress
           path: cypress
