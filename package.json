@@ -1,5 +1,5 @@
 {
-  "name": "@visualia/visualia2",
+  "name": "visualia2",
   "version": "0.0.0",
   "exports": "./dist/visualia2.es.js",
   "files": [
