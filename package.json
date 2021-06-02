@@ -5,8 +5,8 @@
     "build": "vitepress build",
     "build:lib": "vite build -c vite.lib.config.js && tsc src/index.ts --declaration --emitDeclarationOnly --esModuleInterop --outDir dist --target esnext --module esnext --moduleResolution node",
     "serve": "vitepress serve",
-    "test": "cypress open-ct",
-    "test:ci": "cypress run-ct",
+    "test": "cypress run-ct",
+    "test:dev": "cypress open-ct",
     "test:snapshots": "cypress run-ct --env updateSnapshots=true"
   },
   "dependencies": {
