@@ -1,9 +1,14 @@
 {
   "name": "visualia2",
   "version": "0.0.0",
+  "type": "module",
+  "exports": "./dist/visualia2.es.js",
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev",
