@@ -13,3 +13,8 @@ jobs:
         with:
           install: false
           command: yarn cypress run-ct
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress
+          path: cypress
