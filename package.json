@@ -2,6 +2,8 @@
   "name": "visualia2",
   "version": "0.0.3",
   "type": "module",
+  "main": "./dist/visualia2.es.js",
+  "module": "./dist/visualia2.es.js",
   "exports": "./dist/visualia2.es.js",
   "files": [
     "dist"
@@ -18,7 +20,7 @@
     "test": "cypress run-ct",
     "test:dev": "cypress open-ct",
     "test:snapshots": "cypress run-ct --env updateSnapshots=true",
-    "publish": "npm run build && np --no-2fa"
+    "publish": "npm run build && np"
   },
   "dependencies": {
     "@cypress/vite-dev-server": "^2.0.0",
