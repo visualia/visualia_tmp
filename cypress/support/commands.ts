@@ -1,7 +1,7 @@
 //@ts-ignore
 import { addMatchImageSnapshotCommand } from "cypress-image-snapshot/command";
 
-addMatchImageSnapshotCommand({ failureThreshold: 0.01 });
+addMatchImageSnapshotCommand();
 
 Cypress.Commands.add("text", (selector) => {
   cy.get(selector).should(($div) => console.log($div.text()));

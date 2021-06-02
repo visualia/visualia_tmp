@@ -10,5 +10,5 @@ it("VPfive", () => {
     `
   );
   //@ts-ignore
-  cy.get('[data-test="canvas"]').matchImageSnapshot();
+  cy.get('[data-test="canvas"]').matchImageSnapshot({ failureThreshold: 1 });
 });
