@@ -12,12 +12,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev",
-    "build:docs": "vitepress build",
     "build": "vite build -c vite.lib.config.js && tsc src/index.ts --declaration --emitDeclarationOnly --esModuleInterop --outDir dist --target esnext --module esnext --moduleResolution node",
+    "build:docs": "vitepress build",
     "serve:docs": "vitepress serve",
     "test": "cypress run-ct",
     "test:dev": "cypress open-ct",
-    "test:snapshots": "cypress run-ct --env updateSnapshots=true"
+    "test:snapshots": "cypress run-ct --env updateSnapshots=true",
+    "publish": "npm run build && np --no-2fa"
   },
   "dependencies": {
     "@cypress/vite-dev-server": "^2.0.0",
@@ -29,6 +30,7 @@
     "cypress": "^7.4.0",
     "cypress-image-snapshot": "^4.0.1",
     "katex": "^0.13.11",
+    "np": "^7.5.0",
     "p5i": "^0.4.2",
     "pdf-lib": "^1.16.0",
     "typescript": "^4.3.2",
