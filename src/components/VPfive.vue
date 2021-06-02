@@ -5,10 +5,8 @@ import type { P5I } from "p5i";
 
 function setup(p: P5I) {
   p.createCanvas(400, 400);
-  p.fill(255);
-  p.rect(0, 0, 400, 400);
   p.fill(0);
-  p.rect(100, 100, 200, 200);
+  p.circle(200, 200, 200);
 }
 
 const el = ref(null);

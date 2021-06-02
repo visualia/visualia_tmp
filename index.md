@@ -2,6 +2,8 @@
 
 What is this?
 
+<v-pfive />
+
 <v-math>a = 1 \times 2</v-math>
 
 Hello!

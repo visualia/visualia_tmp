@@ -1,4 +1,4 @@
-import { mountComponent } from "../utils";
+import { mountComponent } from "../../cypress/support";
 import VSlider from "./VSlider.vue";
 
 it("VSlider", () => {

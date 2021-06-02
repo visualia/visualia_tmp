@@ -1,5 +1,3 @@
-export * from "./test";
-
 import { ref } from "vue";
 
 export const state = ref<Record<string, any>>({});

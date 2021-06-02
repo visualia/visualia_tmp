@@ -1,5 +1,5 @@
-import { mountComponent } from "../utils";
-import VMath from "../components/VMath.vue";
+import { mountComponent } from "../../cypress/support";
+import VMath from "./VMath.vue";
 
 it("VMath", () => {
   mountComponent(
