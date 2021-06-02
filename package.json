@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "type": "module",
   "main": "./dist/visualia2.es.js",
-  "module": "./dist/visualia2.es.js",
+  "types": "./dist/index.d.ts",
   "exports": "./dist/visualia2.es.js",
   "files": [
     "dist"
