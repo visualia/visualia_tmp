@@ -1,6 +1,7 @@
 {
   "name": "visualia2",
   "version": "0.0.1",
+  "type": "module",
   "exports": "./dist/visualia2.es.js",
   "files": [
     "dist"

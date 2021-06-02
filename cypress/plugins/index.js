@@ -1,8 +1,6 @@
-const { startDevServer } = require("@cypress/vite-dev-server");
-const {
-  addMatchImageSnapshotPlugin,
-} = require("cypress-image-snapshot/plugin");
-const vue = require("@vitejs/plugin-vue");
+import { startDevServer } from "@cypress/vite-dev-server";
+import { addMatchImageSnapshotPlugin } from "cypress-image-snapshot/plugin";
+import vue from "@vitejs/plugin-vue";
 
 module.exports = (on, config) => {
   on("dev-server:start", async (options) =>
