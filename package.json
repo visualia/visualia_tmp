@@ -16,6 +16,7 @@
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
     "@vueuse/core": "^4.11.2",
+    "cypress": "^7.4.0",
     "cypress-image-snapshot": "^4.0.1",
     "katex": "^0.13.11",
     "p5i": "^0.4.2",
