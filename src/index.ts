@@ -3,7 +3,7 @@ import { ComponentOptions } from "vue";
 import * as utils from "./utils";
 
 //@TODO Property 'glob' does not exist on type 'ImportMeta'.
-
+//@ts-ignore
 const eagerComponents: Record<string, ComponentOptions> = import.meta.globEager(
   "./components/**/*.vue"
 );
