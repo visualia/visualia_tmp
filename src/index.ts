@@ -15,3 +15,5 @@ const components = Object.fromEntries(
 );
 
 export { utils, components };
+//@ts-ignore
+export * from "vue/dist/vue.esm-browser.js";
