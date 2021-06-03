@@ -3,8 +3,8 @@
   "version": "0.0.5",
   "type": "module",
   "main": "./dist/visualia2.es.js",
-  "types": "./dist/index.d.ts",
   "exports": "./dist/visualia2.es.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -22,7 +22,7 @@
     "test:snapshots": "cypress run-ct --env updateSnapshots=true",
     "publish": "npm run build && np"
   },
-  "dependencies": {
+  "devDependencies": {
     "@cypress/vite-dev-server": "^2.0.0",
     "@cypress/vue": "^3.0.0-beta.1",
     "@types/katex": "^0.11.0",
