@@ -13,5 +13,5 @@ const components = Object.fromEntries(
   ])
 );
 
-import * as vue from "vue";
-export { utils, components, vue };
+// import * as vue from "vue";
+export { utils, components };
