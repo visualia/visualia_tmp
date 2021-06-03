@@ -6,10 +6,12 @@ import * as utils from "./utils";
 //@TODO Property 'glob' does not exist on type 'ImportMeta'.
 
 const asyncComponents = import.meta.glob("./components/**/*.vue");
-const components = Object.entries(asyncComponents).map(([name, component]) => [
-  name,
-  defineAsyncComponent(component as any),
-]);
-export { utils, components };
+const components = Object.fromEntries(
+  Object.entries(asyncComponents).map(([path, component]) => [
+    path.split("/").slice(-1)[0].replace(".vue", ""),
+    defineAsyncComponent(component as any),
+  ])
+);
 
-export * from "vue";
+import * as vue from "vue";
+export { utils, components, vue };
