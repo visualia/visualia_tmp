@@ -1,6 +1,6 @@
 {
   "name": "visualia2",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "type": "module",
   "main": "./dist/visualia2.es.js",
   "exports": "./dist/visualia2.es.js",
@@ -20,7 +20,7 @@
     "test": "cypress run-ct",
     "test:dev": "cypress open-ct",
     "test:snapshots": "cypress run-ct --env updateSnapshots=true",
-    "publish": "npm run build && np"
+    "publish": "npm run build && release-it -VV"
   },
   "devDependencies": {
     "@cypress/vite-dev-server": "^2.0.0",
@@ -35,6 +35,7 @@
     "np": "^7.5.0",
     "p5i": "^0.4.2",
     "pdf-lib": "^1.16.0",
+    "release-it": "^14.7.0",
     "typescript": "^4.3.2",
     "vite": "^2.3.5",
     "vitepress": "^0.14.0",
