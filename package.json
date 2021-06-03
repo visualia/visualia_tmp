@@ -1,6 +1,6 @@
 {
   "name": "visualia2",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "type": "module",
   "main": "./dist/visualia2.es.js",
   "exports": "./dist/visualia2.es.js",
@@ -19,8 +19,7 @@
     "serve:docs": "vitepress serve",
     "test": "cypress run-ct",
     "test:dev": "cypress open-ct",
-    "test:snapshots": "cypress run-ct --env updateSnapshots=true",
-    "publish": "release-it -VV --ci"
+    "test:snapshots": "cypress run-ct --env updateSnapshots=true"
   },
   "devDependencies": {
     "@cypress/vite-dev-server": "^2.0.0",
