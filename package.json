@@ -20,7 +20,7 @@
     "test": "cypress run-ct",
     "test:dev": "cypress open-ct",
     "test:snapshots": "cypress run-ct --env updateSnapshots=true",
-    "publish": "release-it -VV"
+    "publish": "release-it -VV --ci"
   },
   "devDependencies": {
     "@cypress/vite-dev-server": "^2.0.0",
