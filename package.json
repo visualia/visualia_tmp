@@ -19,7 +19,8 @@
     "serve:docs": "vitepress serve",
     "test": "cypress run-ct",
     "test:dev": "cypress open-ct",
-    "test:snapshots": "cypress run-ct --env updateSnapshots=true"
+    "test:snapshots": "cypress run-ct --env updateSnapshots=true",
+    "release": "release-it -VV"
   },
   "devDependencies": {
     "@cypress/vite-dev-server": "^2.0.0",
