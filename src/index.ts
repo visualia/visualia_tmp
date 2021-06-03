@@ -1,15 +1,16 @@
-import { defineAsyncComponent } from "vue";
+import { ComponentOptions } from "vue";
 
 import * as utils from "./utils";
 
-//@ts-ignore
 //@TODO Property 'glob' does not exist on type 'ImportMeta'.
 
-const asyncComponents = import.meta.glob("./components/**/*.vue");
+const eagerComponents: Record<string, ComponentOptions> = import.meta.globEager(
+  "./components/**/*.vue"
+);
 const components = Object.fromEntries(
-  Object.entries(asyncComponents).map(([path, component]) => [
+  Object.entries(eagerComponents).map(([path, component]) => [
     path.split("/").slice(-1)[0].replace(".vue", ""),
-    defineAsyncComponent(component as any),
+    component.default,
   ])
 );
 
