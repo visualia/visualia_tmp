@@ -8,8 +8,5 @@ export default {
       entry: "./src/index.ts",
       formats: ["es"],
     },
-    rollupOptions: {
-      external: ["vue"],
-    },
   },
 };

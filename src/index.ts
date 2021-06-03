@@ -11,3 +11,5 @@ const components = Object.entries(asyncComponents).map(([name, component]) => [
   defineAsyncComponent(component as any),
 ]);
 export { utils, components };
+
+export * from "vue";
