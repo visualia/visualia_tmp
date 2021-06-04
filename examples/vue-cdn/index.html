@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module">
+      import { utils, components } from "../dist/visualia2.es.js";
+
+      import { watchEffect } from "https://cdn.skypack.dev/vue@3/dist/vue.esm-browser.prod.js";
+
+      watchEffect(() => console.log(utils.state.value.x));
+      utils.set("x", 10);
+
+      //import {
+      // import {
+      //   utils,
+      //   components,
+      //   // createApp,
+      //   // watchEffect,
+      //   // watch,
+      //   // ref,
+      // } from "https://cdn.skypack.dev/visualia2";
+      // import {
+      //   watch,
+      //   ref,
+      //   createApp,
+      //   watchEffect,
+      // } from "https://cdn.skypack.dev/vue@3/dist/vue.esm-browser.prod.js";
+
+      // watchEffect(() => console.log(utils.state));
+      // utils.set("x", 10);
+      // // setTimeout(() => utils.set("x", 100));
+
+      // // console.log(components.VSlider.setup);
+
+      // const VSlider2 = {
+      //   setup(_, { emit }) {
+      //     const input = ref(0);
+
+      //     watch(
+      //       input,
+      //       () => {
+      //         utils.set("x", input.value);
+      //         emit("update", input.value);
+      //       },
+      //       { immediate: true }
+      //     );
+      //   },
+      //   template: ` <input type="range" v-model.number="input" />`,
+      // };
+
+      // const app = createApp({
+      //   components: { VSlider2 },
+      //   setup() {
+      //     const s = ref(0);
+      //     watch(s, () => utils.set("x", s.value), {
+      //       immediate: true,
+      //     });
+      //     watch(utils.state, () => console.log(utils.state.value), {
+      //       immediate: true,
+      //     });
+      //     return { s, ...utils };
+      //   },
+      //   template: `<v-slider2 /> / {{ s }}`,
+      // });
+      // app.mount("#app");
+    </script>
+  </body>
+</html>
