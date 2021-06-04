@@ -12,6 +12,15 @@
     "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visualia/visualia2.git"
+  },
+  "keywords": [
+    "vite",
+    "vue",
+    "vue-component"
+  ],
   "scripts": {
     "dev": "vite",
     "build:docs": "vite build",

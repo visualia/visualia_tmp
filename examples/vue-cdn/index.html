@@ -8,13 +8,15 @@
   <body>
     <div id="app"></div>
     <script type="module">
-      import { utils, components } from "../dist/visualia2.es.js";
+      import { get, set, state } from "https://cdn.skypack.dev/visualia2";
 
-      import { watchEffect } from "https://cdn.skypack.dev/vue@3/dist/vue.esm-browser.prod.js";
+      import { watch } from "https://cdn.skypack.dev/vue@3/dist/vue.esm-browser.prod.js";
 
-      watchEffect(() => console.log(utils.state.value.x));
-      utils.set("x", 10);
+      watch(state, () => console.log(state.x), { immediate: true });
 
+      set("x", 10);
+
+      //console.log(state.x);
       //import {
       // import {
       //   utils,

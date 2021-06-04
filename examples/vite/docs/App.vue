@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { ref, watch } from "vue";
 
-import { components, get, set, state } from "../dist/visualia.es";
+import { components, get, set, state } from "../dist/visualia2.es";
 import VSlider from "../dist/VSlider";
 
 // import { get, set } from "../src";
