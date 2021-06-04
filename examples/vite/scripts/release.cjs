@@ -89,11 +89,9 @@ async function main() {
     message: `Adding Github release v${targetVersion} (requres gh installed) Confirm?`,
   });
 
-  if (!releaseOk) {
-    return;
+  if (releaseOk) {
+    await run("gh", ["release", "create", `v${targetVersion}`]);
   }
-
-  await run("gh", ["release", "create", `v${targetVersion}`]);
 }
 
 function updatePackage(version) {
