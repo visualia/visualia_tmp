@@ -57,6 +57,9 @@ async function main() {
   // step("\nRunning tests...");
   // await run("npm", ["run", "test"]);
 
+  // Check if working directory is clean
+  await run("git", ["diff", "--exit-code"]);
+
   // Update the package version.
   step("\nUpdating the package version...");
   updatePackage(targetVersion);
