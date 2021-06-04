@@ -117,8 +117,8 @@ async function main() {
       "release",
       "create",
       `v${targetVersion}`,
-      "-F",
-      "CHANGELOG.md",
+      "--notes",
+      "New release",
     ]);
   }
 }
