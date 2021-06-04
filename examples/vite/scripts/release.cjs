@@ -54,8 +54,8 @@ async function main() {
   }
 
   // Build the package.
-  step("\nRunning tests...");
-  await run("npm", ["run", "test"]);
+  // step("\nRunning tests...");
+  // await run("npm", ["run", "test"]);
 
   // Update the package version.
   step("\nUpdating the package version...");
