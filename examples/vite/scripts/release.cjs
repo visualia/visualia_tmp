@@ -77,7 +77,7 @@ async function main() {
     "CHANGELOG.md",
     "-s",
   ]);
-  //await run("npx", ["prettier", "--write", "CHANGELOG.md"]);
+  await run("npx", ["prettier", "--write", "CHANGELOG.md"]);
 
   // Commit changes to the Git and create a tag.
   step("\nCommitting changes...");
