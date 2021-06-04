@@ -1,6 +1,6 @@
 {
   "name": "visualia2",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "type": "module",
   "main": "./dist/visualia2.es.js",
   "exports": "./dist/visualia2.es.js",
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
-    "conventional-changelog": "^3.1.24",
+    "conventional-changelog-cli": "^2.1.1",
     "enquirer": "^2.3.6",
     "execa": "^5.1.0",
     "semver": "^7.3.5",
