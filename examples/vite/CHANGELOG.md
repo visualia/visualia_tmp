@@ -1,3 +1,5 @@
+## [0.0.30](https://github.com/visualia/visualia2/compare/v0.0.29...v0.0.30) (2021-06-04)
+
 ## [0.0.29](https://github.com/visualia/visualia2/compare/v0.0.28...v0.0.29) (2021-06-04)
 
 ### Features
