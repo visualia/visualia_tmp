@@ -90,7 +90,13 @@ async function main() {
   });
 
   if (releaseOk) {
-    await run("gh", ["release", "create", `v${targetVersion}`]);
+    await run("gh", [
+      "release",
+      "create",
+      `v${targetVersion}`,
+      "--notes",
+      "New release",
+    ]);
   }
 }
 
