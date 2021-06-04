@@ -68,6 +68,27 @@ async function main() {
   step("\nBuilding the package...");
   await run("npm", ["run", "build"]);
 
+  step("\nGenerating the changelog...");
+  await run("npx", [
+    "conventional-changelog",
+    "-p",
+    "angular",
+    "-i",
+    "CHANGELOG.md",
+    "-s",
+  ]);
+  await run("npx", ["prettier", "-write", "CHANGELOG.md"]);
+
+  const { yes: changelogOk } = await prompt({
+    type: "confirm",
+    name: "yes",
+    message: `Changelog generated. Does it look good?`,
+  });
+
+  if (!changelogOk) {
+    return;
+  }
+
   // Commit changes to the Git and create a tag.
   step("\nCommitting changes...");
   await run("git", ["add", "package.json"]);
