@@ -1,3 +1,9 @@
+## [0.0.29](https://github.com/visualia/visualia2/compare/v0.0.28...v0.0.29) (2021-06-04)
+
+### Features
+
+- auto release notes ([5d39b1e](https://github.com/visualia/visualia2/commit/5d39b1ef702a0628b98974d34a7303db9e1015b3))
+
 ## [0.0.28](https://github.com/visualia/visualia2/compare/v0.0.27...v0.0.28) (2021-06-04)
 
 ### Features
