@@ -76,13 +76,7 @@ async function main() {
 
   // Publish the package.
   step("\nPublishing the package...");
-  await run("npm", [
-    "publish",
-    "--new-version",
-    targetVersion,
-    "--no-commit-hooks",
-    "--no-git-tag-version",
-  ]);
+  await run("npm", ["publish"]);
 
   // Push to GitHub.
   step("\nPushing to GitHub...");
