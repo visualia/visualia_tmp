@@ -16,7 +16,8 @@
     "dev": "vite",
     "build:docs": "vite build",
     "build": "vite build -c vite.lib.config.js",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "release": "node scripts/release.cjs"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.3",
