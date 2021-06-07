@@ -2,7 +2,7 @@
   "name": "visualia2",
   "version": "0.0.30",
   "type": "module",
-  "main": "./dist/visualia2.es.js",
+  "main": "./dist/visualia2.umd.js",
   "exports": "./dist/visualia2.es.js",
   "types": "./dist/index.d.ts",
   "files": [

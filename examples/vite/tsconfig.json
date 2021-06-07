@@ -13,7 +13,6 @@
     "lib": ["esnext", "dom"]
   },
   "include": [
-    "dist/**/*.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",

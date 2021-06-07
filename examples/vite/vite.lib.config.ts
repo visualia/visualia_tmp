@@ -4,12 +4,18 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [vue()],
   build: {
+    minify: null,
     lib: {
       entry: "./src/index.ts",
-      formats: ["es"],
+      name: "Visualia",
     },
     rollupOptions: {
       external: ["vue"],
+      output: {
+        globals: {
+          vue: "Vue",
+        },
+      },
     },
   },
 });
