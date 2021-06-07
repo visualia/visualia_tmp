@@ -1,9 +1,9 @@
 import vue from "@vitejs/plugin-vue";
+import { defineConfig } from "vite";
 
-export default {
+export default defineConfig({
   plugins: [vue()],
   build: {
-    minify: "esbuild",
     lib: {
       entry: "./src/index.ts",
       formats: ["es"],
@@ -12,4 +12,4 @@ export default {
       external: ["vue"],
     },
   },
-};
+});

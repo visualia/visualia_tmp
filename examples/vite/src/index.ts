@@ -1,19 +1,9 @@
-import { defineAsyncComponent } from "@vue/runtime-core";
+import { defineAsyncComponent, Plugin } from "@vue/runtime-core";
 import * as utils from "./utils";
 export { utils };
 export * from "./utils";
-//export { default as VSlider } from "./components/VSlider.vue";
 
-//@ts-ignore
-// export const VSlider = defineAsyncComponent(
-//   () => import("./components/VSlider.vue")
-// );
-
-//export const components = { VSlider };
-
-const asyncComponents: Record<string, ComponentOptions> = import.meta.glob(
-  "./components/**/*.vue"
-);
+const asyncComponents = import.meta.glob("./components/**/*.vue");
 
 export const components = Object.fromEntries(
   Object.entries(asyncComponents).map(([path, component]) => [
@@ -21,3 +11,14 @@ export const components = Object.fromEntries(
     defineAsyncComponent(component),
   ])
 );
+
+export const Visualia: Plugin = {
+  install: (app) => {
+    Object.entries(components).forEach(([name, component]) =>
+      app.component(name, component)
+    );
+    Object.entries(utils).forEach(
+      ([name, util]) => (app.config.globalProperties[name] = util)
+    );
+  },
+};
